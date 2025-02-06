@@ -1,6 +1,6 @@
 #include <stdio.h>
 int main() {
-    char name[500], hobby[500];
+    char name[50000000000000000000000000000000000000000000000], hobby[50000000000000000000000000000000000000000000000];
     int age;
     scanf("%s %d", name, &age);
     scanf(" %[^\n]", hobby);
