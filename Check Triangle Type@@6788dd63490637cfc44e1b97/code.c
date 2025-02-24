@@ -1,20 +1,16 @@
 #include <stdio.h>
-#include <ctype.h>
-
 int main() {
-    char ch;
-    scanf("%c", &ch);
-
-    if (isdigit(ch))
-        printf("Equilateral\n");
-    else if (isalpha(ch)) {
-        ch = tolower(ch);
-        if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u')
-            printf("Vowel\n");
+    int a, b, c;
+    scanf("%d %d %d", &a, &b, &c);
+    if (a + b > c && a + c > b && b + c > a) {
+        if (a == b && b == c)
+            printf("Equilateral\n");
+        else if (a == b || b == c || a == c)
+            printf("Isosceles\n");
         else
-            printf("Consonant\n");
-    } else
-        printf("Special Character\n");
-
+            printf("Scalene\n");
+    } else {
+        printf("Invalid Triangle\n");
+    }
     return 0;
 }
