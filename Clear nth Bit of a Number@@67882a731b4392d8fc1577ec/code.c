@@ -8,6 +8,5 @@ int main() {
     scanf("%d", &n);
     int updatedNum = clearNthBit(num, n);
     printf("%d\n", updatedNum);
-
     return 0;
 }
