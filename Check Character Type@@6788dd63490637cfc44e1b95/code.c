@@ -3,7 +3,6 @@
 int main() {
     char ch;
     scanf("%c", &ch);
-
     if (isdigit(ch))
         printf("Digit\n")
     else if (isalpha(ch)) {
